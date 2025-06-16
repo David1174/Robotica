@@ -1,0 +1,26 @@
+int ledPin = 13; 
+int state = 0; 
+int senial; 
+void setup() {
+    Serial.begin(9600);
+    pinMode(ledPin, OUTPUT);   
+    digitalWrite(ledPin, LOW);  
+    senial=1;
+} 
+void loop() {
+  if(Serial.available() > 0){
+     state = Serial.read();
+     if (state == 'A') {
+        if(senial==1) {        
+           digitalWrite(ledPin, HIGH); 
+           senial=0;  
+        }
+        else {
+           digitalWrite(ledPin,LOW );
+           senial=1;    
+        }         
+     }
+  }
+}
+
+
