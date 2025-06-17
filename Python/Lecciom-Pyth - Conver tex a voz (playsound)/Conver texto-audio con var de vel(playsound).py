@@ -24,3 +24,4 @@ playsound(temp_path)
 
 # Elimina el archivo temporal después de la reproducción
 #os.remove(temp_path)
+print("prueba")
