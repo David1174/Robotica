@@ -41,7 +41,7 @@ label = tk.Label(ventana, text="Presiona el botón para escuchar el texto.")
 label.pack(pady=20)
 
 # Botón para generar y reproducir el audio
-texto_a_leer = "bienvenido compa a mis clases ."
+texto_a_leer = "bienvenido a mis clases ."
 boton = tk.Button(ventana, text="Escuchar Voz", command=lambda: manejar_audio(texto_a_leer))
 boton.pack(pady=20)
 
