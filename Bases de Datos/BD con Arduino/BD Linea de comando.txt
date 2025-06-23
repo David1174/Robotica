@@ -1,0 +1,11 @@
+
+CREATE DATABASE IF NOT EXISTS meteorologia;
+
+USE meteorologia;
+
+CREATE TABLE IF NOT EXISTS datos (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    humedad FLOAT,
+    temperatura FLOAT,
+    hora DATETIME DEFAULT CURRENT_TIMESTAMP
+);
