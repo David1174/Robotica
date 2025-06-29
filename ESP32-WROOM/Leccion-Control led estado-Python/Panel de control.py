@@ -8,7 +8,7 @@ class PanelControlESP32(tk.Tk):
         super().__init__()
         self.title("Panel de control ESP32")
         self.configure(bg="#e0f7fa")
-        self.geometry("350x200")
+        self.geometry("600x400")
         self.resizable(False, False)
 
         self.frame = tk.Frame(self, bg="#ffffff", bd=4, relief="groove")
