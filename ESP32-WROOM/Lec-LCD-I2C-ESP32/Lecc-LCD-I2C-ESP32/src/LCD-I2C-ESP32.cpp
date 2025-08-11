@@ -1,3 +1,4 @@
+#include <Arduino.h>
 #include <Wire.h>
 #include <LiquidCrystal_I2C.h>
 
@@ -12,7 +13,7 @@ void setup() {
   lcd.print("Hola ESP32!");
 
   lcd.setCursor(0, 1);  // Columna 0, fila 1
-  lcd.print("LCD I2C OK!");
+  lcd.print("Listo!");
 }
 
 void loop() {

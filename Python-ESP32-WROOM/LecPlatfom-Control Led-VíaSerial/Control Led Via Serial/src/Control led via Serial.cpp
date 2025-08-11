@@ -1,3 +1,5 @@
+#include <Arduino.h>
+
 #define LED_PIN 19  // Cambia por el pin que uses para el LED
 
 void setup() {
