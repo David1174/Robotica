@@ -3,7 +3,7 @@ import serial
 import time
 
 # Configurar la conexión serial (ajusta el puerto según sea necesario)
-arduino = serial.Serial('COM7', 9600, timeout=1)
+arduino = serial.Serial('COM8', 9600, timeout=1)
 time.sleep(2)  # Dar tiempo al Arduino para inicializar
 
 # Función para encender el LED

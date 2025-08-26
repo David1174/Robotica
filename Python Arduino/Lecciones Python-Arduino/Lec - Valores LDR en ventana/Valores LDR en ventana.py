@@ -3,7 +3,7 @@ import serial
 
 # Configuración del puerto serie
 try:
-    arduino = serial.Serial('COM12', 9600, timeout=0.01)  # Cambia 'COM3' según tu sistema
+    arduino = serial.Serial('COM8', 9600, timeout=0.01)  # Cambia 'COM3' según tu sistema
 except Exception as e:
     print(f"Error al conectar con Arduino: {e}")
     arduino = None
